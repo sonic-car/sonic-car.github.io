@@ -61,8 +61,11 @@ export default {
 <style scoped>
 #main {
   height: 60rem;
-  /* background-image: url('../assets/timg.jpeg') */
-  background:url('../assets/timg.jpeg') no-repeat 100% center scroll;
+  background:url('../assets/timg.jpeg') no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
 }
 
 .el-header {
