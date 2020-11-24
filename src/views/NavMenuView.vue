@@ -16,7 +16,7 @@
     </el-row>
     <el-row type="flex" class="row-bg header" :class="isStiky? 'stiky' : ''" justify="space-around">
       <el-col :span="4" class="icon">
-        <span class="title">XIAOWEI</span>
+        <span class="title">SONIC</span>
       </el-col>
       <el-col :xs="16" :sm="16" :md="12" :lg="10" :xl="12" class="navbar">
           <el-col :span="6" class="menu-item">
