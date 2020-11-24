@@ -2,7 +2,9 @@
 
 本项目为小猬智能车网站
 
-## 环境配置（ubuntu）
+## 环境配置
+
+### ubuntu
 
 安装node
 
@@ -26,11 +28,11 @@ npm config get registry
 node --version
 ```
 
-为防止不必要的错误，尽量使用 `v14.8.0` 版本，如果版本较低，可使用npm提供的工具`n`进行升级
+为防止不必要的错误，尽量使用高于 `v14.8.0`的 版本，如果版本较低，可使用npm提供的工具`n`进行升级
 
 ```shell
 sudo npm install -g n
-sudo n 14.8.0
+sudo n lts
 # 再次检查node版本
 node --version
 ```
@@ -50,6 +52,66 @@ yarn --version
 yarn config set registry https://registry.npm.taobao.org
 # 验证是否修改成功
 yarn config get registry
+```
+
+克隆本项目仓库
+
+```shell
+git clone https://git.lug.ustc.edu.cn/overwang/xiaowei.git
+```
+
+进入项目目录下安装项目环境依赖
+
+```shell
+cd xiaowei
+# 安装依赖包
+yarn install
+```
+
+至此，项目所需环境安装完毕，后续开发无需再次进行上述操作。
+
+### windows
+
+从官网下载安装[node.js LTS](https://nodejs.org/en/download/)版本并安装，安装完成后已包含npm
+
+打开cmd或powershell，执行以下操作
+
+npm换源
+
+```powershell
+# 更换为淘宝镜像
+npm config set registry https://registry.npm.taobao.org
+# 验证是否修改成功
+npm config get registry
+```
+
+检查node版本
+
+```powershell
+node --version
+```
+
+安装`yarn`包管理工具
+
+```shell
+npm install -g yarn
+# 检查是否安装成功
+yarn --version
+```
+
+同样给`yarn`换源
+
+```shell
+# 更换为淘宝镜像
+yarn config set registry https://registry.npm.taobao.org
+# 验证是否修改成功
+yarn config get registry
+```
+
+克隆本项目仓库
+
+```shell
+git clone https://git.lug.ustc.edu.cn/overwang/xiaowei.git
 ```
 
 进入项目目录下安装项目环境依赖
