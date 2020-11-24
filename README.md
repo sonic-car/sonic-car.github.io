@@ -80,21 +80,21 @@ yarn serve
 
 ```shell
  .
-├── assets 								# README需要的图片
-	├──...
-├── public 								# vue项目的外部目录
+├── assets				# README需要的图片
+    ├──...
+├── public				# vue项目的外部目录
     ├── favicon.ico
     └── index.html
-├── node_modules			# node依赖包
+├── node_modules				# node依赖包
     ├── ...
 └── src
-    ├── App.vue						  # vue项目的根文件
-    ├── assets							 # 项目需要的资源文件
+    ├── App.vue					# vue项目的根文件
+    ├── assets				# 项目需要的资源文件
     ├── components				# 自定义的各种组件，可以在这里定义组件
-    ├── main.js						    # vue项目的根脚本
-    ├── plugins							# 外部引入的插件
-    ├── router							 # vue router定义的文件
-    └── views							 # 主要页面视图
+    ├── main.js				# vue项目的根脚本
+    ├── plugins				# 外部引入的插件
+    ├── router				# vue router定义的文件
+    └── views				# 主要页面视图
 
 ```
 
@@ -102,7 +102,7 @@ yarn serve
 
 ## 学习资料
 
-+　基本的html知识，如标签、属性等，可以在[w3school](https://www.w3school.com.cn/html/index.asp)中学习
++ 基本的html知识，如标签、属性等，可以在[w3school](https://www.w3school.com.cn/html/index.asp)中学习
 
 + 对于vue框架本身，请参考[vue官方文档](https://cn.vuejs.org/v2/guide/)
 
