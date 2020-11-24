@@ -70,7 +70,7 @@ yarn install
 yarn serve
 ```
 
-![image-20201124010442214](/home/wsh/git/xiaowei/assets/image-20201124010442214.png)
+![image-20201124010442214](./assets/image-20201124010442214.png)
 
 不出意外的话结果会和上图类似，预览服务器就启动成功了，可以在浏览器中使用上述的地址进行访问。
 
