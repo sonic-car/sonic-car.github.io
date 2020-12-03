@@ -23,7 +23,7 @@
             <h3 href="#main">主页</h3>
           </el-col>
           <el-col :span="6" class="menu-item">
-            <h3>项目介绍</h3>
+            <h3>项目新闻</h3>
           </el-col>
           <el-col :span="6" class="menu-item">
             <h3>小车配置</h3>
@@ -80,14 +80,14 @@ export default {
 
 <style scoped>
 .header {
-  height: 6rem;
+  height: 3rem;
   padding: 0 1rem;
   transition: .5s all ease;
 }
 
 .header-additional {
-  height: 5rem;
-  padding: 2rem 5rem 0 5rem;
+  height: 3rem;
+  padding: 1rem 5rem 0 5rem;
   transition: .2s all ease;
 }
 
@@ -103,7 +103,7 @@ export default {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
@@ -115,21 +115,22 @@ export default {
 
 .menu-item {
   cursor: pointer;
+  font-size: 0.6rem;
   color: rgba(0, 0, 0, 0.5);
   transition: .3s all ease;
 }
 .menu-item:hover {
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   color: black;
 }
 
 .stiky {
   position:fixed;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   top:0;
   left:0;
-  height: 5rem !important;
+  height: 3rem !important;
   padding: 0 1rem;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)

@@ -9,11 +9,11 @@
       </div>
     </el-container>
     <page-section>
-      <template slot="header">
-        项目介绍
+      <template slot="header" id="news">
+        项目新闻
       </template>
       <template slot="content">
-        wertert
+        <project-news></project-news>
       </template>
     </page-section>
     <page-section>
@@ -48,19 +48,21 @@
 <script>
 import NavMenuView from '@/views/NavMenuView.vue'
 import PageSection from '@/components/PageSection.vue'
+import ProjectNews from '@/components/ProjectNews.vue'
 
 export default {
   name: 'MainView',
   components:{
     NavMenuView,
     PageSection,
+    ProjectNews,
   },
 }
 </script>
 
 <style scoped>
 #main {
-  height: 60rem;
+  height: 100vh;
   background:url('../assets/timg.jpeg') no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
