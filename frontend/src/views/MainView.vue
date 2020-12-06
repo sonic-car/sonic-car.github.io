@@ -5,7 +5,7 @@
         <nav-menu-view></nav-menu-view>
       </el-header>
       <div id="main-intro">
-        <span> this is a MainView. </span>
+        <span> kljhghkjgh </span>
       </div>
     </el-container>
     <page-section>
@@ -68,6 +68,12 @@ export default {
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-position: center 0;
+}
+#main-intro {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .el-header {
