@@ -1,21 +1,28 @@
 <template>
   <div>
-    <el-container id="main">
+    <el-container id="main" :style="windowHeight > windowWidth ? 'height: 130vh' : ''">
       <el-header height="auto">
         <nav-menu-view></nav-menu-view>
       </el-header>
-      <div id="main-intro">
-        <span> kljhghkjgh </span>
-      </div>
+      <el-main v-if="windowHeight < windowWidth">
+        <el-row type="flex" class="main-content" justify="space-between">
+          <el-col :span="12" class="main-item">
+            <div class="car-image-container">
+              <img class="car-image" src="@/assets/xiaowei.png"/>
+            </div>
+          </el-col>
+          <el-col :span="12" class="main-item">
+            <project-news></project-news>
+          </el-col>
+        </el-row>
+      </el-main>
+      <el-main v-else>
+        <div class="car-image-container-mobile">
+          <img class="car-image-mobile" src="@/assets/xiaowei.png"/>
+        </div>
+        <project-news class="project-news"></project-news>
+      </el-main>
     </el-container>
-    <page-section>
-      <template slot="header" id="news">
-        项目新闻
-      </template>
-      <template slot="content">
-        <project-news></project-news>
-      </template>
-    </page-section>
     <page-section>
       <template slot="header">
         小车配置
@@ -57,14 +64,32 @@ export default {
     PageSection,
     ProjectNews,
   },
+  data(){
+    return{
+      windowWidth: document.documentElement.clientWidth, //实时屏幕宽度
+			windowHeight: document.documentElement.clientHeight, //实时屏幕高度
+    };
+  },
+  mounted() {
+    let that = this;
+    window.onresize = () => {
+      return (() => {
+        window.fullHeight = document.documentElement.clientHeight;
+        window.fullWidth = document.documentElement.clientWidth;
+        that.windowHeight = window.fullHeight; // 高
+        that.windowWidth = window.fullWidth; // 宽
+      })()
+    };
+
+  }
 }
 </script>
 
 <style scoped>
 #main {
   height: 100vh;
-  background:url('../assets/timg.jpeg') no-repeat;
   background-size: cover;
+  background-color:rgb(146, 179, 211);
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-position: center 0;
@@ -77,15 +102,56 @@ export default {
 }
 
 .el-header {
-  border-bottom-style:solid;
-  border-bottom-width: 1px;
-  border-bottom-color: rgba(0, 0, 0, 0.2);
   padding: 0 !important;
 }
 
 .video-player {
-  width: 60vw;
-  height: 45vw;
+  width: 80vw;
+  height: 40vw;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
+}
+
+.main-content {
+  margin: 30px;
+}
+
+.main-item {
+  padding: 10px;
+}
+
+.car-image-container {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-image-container-mobile {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.car-image {
+  /* height: 50vh; */
+  width: 40vw;
+  opacity: 0.95;
+}
+
+.car-image-mobile {
+  height: 30vh;
+  /* width: 40vw; */
+  opacity: 0.95;
+}
+
+.car-image:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.project-news {
+  width: 100%;
 }
 </style>

@@ -1,19 +1,21 @@
 <template>
   <div>
-    <el-row type="flex" class="row-bg header-additional" :class="isStiky? 'hide' : ''" justify="space-between">
-      <el-col :span="10" class="icon">
+    <el-row type="flex" class="row-bg header-additional" justify="space-between">
+      <el-col :span="18" class="icon">
         <el-image
-        style="width: 200%"
+        style="width:auto; height: 7vh"
         :src="url"
         fit="sacle-down"></el-image>
       </el-col>
-      <el-col :span="3" class="icon">
+      <el-col :span="6" class="icon" style="justify-content: center;">
         <el-image
-        style="width: 100%"
+        style="height: 8vh;"
         :src="require('../assets/LinkeLOGO.png')"
         fit="sacle-down"></el-image>
       </el-col>
     </el-row>
+    <div class="header" v-if="isStiky">
+    </div>
     <el-row type="flex" class="row-bg header" :class="isStiky? 'stiky' : ''" justify="space-around">
       <el-col :span="4" class="icon">
         <span class="title">SONIC</span>
@@ -68,7 +70,7 @@ export default {
   methods:{
     handleScroll() {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop || 	document.body.scrollTop;
-      if(scrollTop > 0){
+      if(scrollTop > 50){
         this.isStiky = true;
       }else{
         this.isStiky = false;
@@ -80,21 +82,16 @@ export default {
 
 <style scoped>
 .header {
-  height: 3rem;
+  height: 7vh;
   padding: 0 1rem;
   transition: .5s all ease;
 }
 
 .header-additional {
-  height: 3rem;
-  padding: 1rem 5rem 0 5rem;
+  height: 8vh;
+  padding: 1rem 1rem 0 1rem;
   transition: .2s all ease;
 }
-
-.hide {
-  height: 0;
-}
-
 
 .icon {
   display: flex;
@@ -115,12 +112,12 @@ export default {
 
 .menu-item {
   cursor: pointer;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.5);
   transition: .3s all ease;
 }
 .menu-item:hover {
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: black;
 }
 
@@ -130,7 +127,7 @@ export default {
   width: 100%;
   top:0;
   left:0;
-  height: 3rem !important;
+  height: 6vh !important;
   padding: 0 1rem;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)

@@ -1,25 +1,14 @@
 <template>
   <div id="app">
-    <el-container>
-      <el-main>
-        <main-view></main-view>
-      </el-main>
-      <el-footer>
-        <footer-view></footer-view>
-      </el-footer>
-    </el-container>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import MainView from './views/MainView.vue'
-import FooterView from './views/FooterView.vue'
 
 export default {
   name: 'app',
   components: {
-    MainView,
-    FooterView,
   }
 }
 </script>
@@ -66,4 +55,7 @@ html {font-size: 62.5%!important; /* 10÷16=62.5% */}
     }
 }
 
+.el-carousel__mask {
+  display: none;
+}
 </style>

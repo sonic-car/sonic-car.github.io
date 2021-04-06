@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 .page-section {
-  height: 40rem;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -51,6 +51,7 @@ export default {
 }
 
 .header {
+  height: 20%;
   font-size: 3rem;
   font-weight: 900;
   color: #007bff;
@@ -60,6 +61,9 @@ export default {
 .content {
   height: 80%;
   width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fade-enter-active, .fade-leave-active {

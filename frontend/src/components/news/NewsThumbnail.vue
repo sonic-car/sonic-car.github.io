@@ -1,6 +1,6 @@
 <template>
-  <div class="news-card">
-    <span class="title">{{newsInfo.title}}</span>
+  <div class="news-card title" :style="{background: this.newsInfo.image + ' no-repeat center', backgroundSize:'100% auto'}">
+    {{newsInfo.title}}
   </div>
 </template>
 
@@ -11,20 +11,24 @@ export default {
     newsInfo:{
       type: Object
     }
-  }
+  },
 }
 </script>
 
 <style scoped>
 .title {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-family: STSong;
+  font-weight: 800;
+  color: white;
   margin-bottom: 1rem;
 }
 .news-card {
   display: flex;
   height: inherit;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  background-color:darkgrey;
+  /* border-radius: 10px; */
+  /* background-color:darkgrey; */
 }
 </style>
