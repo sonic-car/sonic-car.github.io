@@ -23,7 +23,7 @@ export default {
     };
   },
   mounted() {
-    window.addEventListener("scroll", this.handleScroll);
+    // window.addEventListener("scroll", this.handleScroll);
   },
   methods:{
     handleScroll() {
@@ -41,17 +41,17 @@ export default {
 
 <style scoped>
 .page-section {
-  height: 90vh;
+  height: 100%;
+  padding-top: 6vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 2rem 0;
-  padding: 5em 0;
 }
 
 .header {
   height: 20%;
+  width: 100%;
   font-size: 3rem;
   font-weight: 900;
   color: #007bff;
@@ -59,11 +59,12 @@ export default {
 }
 
 .content {
-  height: 80%;
-  width: 80%;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-items: center;
 }
 
 .fade-enter-active, .fade-leave-active {

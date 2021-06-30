@@ -20,21 +20,24 @@
       <el-col :span="4" class="icon">
         <span class="title">SONIC</span>
       </el-col>
-      <el-col :xs="16" :sm="16" :md="12" :lg="10" :xl="12" class="navbar">
-          <el-col :span="6" class="menu-item">
-            <h3 href="#main">主页</h3>
+      <el-col :xs="16" :sm="16" :md="12" :lg="10" :xl="8" class="navbar">
+          <el-col :span="4" class="menu-item">
+            <a href="#main">主页</a>
           </el-col>
-          <el-col :span="6" class="menu-item">
-            <h3>项目新闻</h3>
+          <el-col :span="4" class="menu-item">
+            <a href="#perception">感知</a>
           </el-col>
-          <el-col :span="6" class="menu-item">
-            <h3>小车配置</h3>
+          <el-col :span="4" class="menu-item">
+            <a href="#learning">学习</a>
           </el-col>
-          <el-col :span="6" class="menu-item">
-            <h3>相关视频</h3>
+          <el-col :span="4" class="menu-item">
+            <a href="#computing">计算</a>
           </el-col>
-          <el-col :span="6" class="menu-item">
-            <h3>联系方式</h3>
+          <el-col :span="4" class="menu-item">
+            <a href="#solution">解决方案</a>
+          </el-col>
+          <el-col :span="4" class="menu-item">
+            <a href="#team">团队介绍</a>
           </el-col>
       </el-col>
     </el-row>
@@ -46,7 +49,7 @@ export default {
   name: 'NavMenuView',
   data() {
     return {
-      isStiky: false,
+      isStiky: true,
       url: require('../assets/logoi.png'),
     };
   },
@@ -100,7 +103,7 @@ export default {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -111,14 +114,35 @@ export default {
 }
 
 .menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   font-size: 0.8rem;
-  color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  color: rgb(255, 255, 255);
   transition: .3s all ease;
 }
+
+.menu-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  height: 100%;
+  font-weight:600;
+  text-decoration: unset;
+  color: rgb(255, 255, 255, 0.9);
+  transition: .3s all ease;
+}
+
 .menu-item:hover {
   font-size: 1rem;
-  color: black;
+  color: rgb(255, 255, 255, 1);;
+}
+.menu-item a:hover {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255, 1);;
 }
 
 .stiky {
@@ -129,8 +153,8 @@ export default {
   left:0;
   height: 6vh !important;
   padding: 0 1rem;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
+  /* background-color: white; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04) */
 }
 
 </style>
