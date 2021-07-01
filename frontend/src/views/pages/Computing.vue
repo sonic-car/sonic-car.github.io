@@ -1,33 +1,38 @@
 <template>
-  <div>
-    <el-row type="flex" class="full page-section" justify="space-between">
-      <el-col span='8' class="v-center">
-        <div class="item">
-        </div>
-        <div class="item">
-        </div>
-        <div class="item">
-        </div>
-      </el-col>
-      <el-col span='2' class="center">
-          <div class="line"></div>
-      </el-col>
-      <el-col span='14' class="center">
-        <div class="slogan">
-            <strong>学</strong>世界规律
-            <br>
-            <strong>习</strong>决策之道
+  <video-background src="https://horizon-robotics-webpage.s3.amazonaws.com/uploads/2020/12/Clip.mp4"  class="main-page">
+    <div>
+      <el-row type="flex" class="full page-section" justify="space-between">
+        <el-col span='8' class="v-center">
+          <div class="item">
           </div>
-      </el-col>
-    </el-row>
-  </div>
+          <div class="item">
+          </div>
+          <div class="item">
+          </div>
+        </el-col>
+        <el-col span='2' class="center">
+            <div class="line"></div>
+        </el-col>
+        <el-col span='14' class="center">
+          <div class="slogan">
+              <strong>计</strong>瞬息数据
+              <br>
+              <strong>算</strong>精准结果
+            </div>
+        </el-col>
+      </el-row>
+    </div>
+  </video-background>
 </template>
 
 <script>
 
+import VideoBackground from '@/components/VideoBackground.vue'
+
 export default {
   name: 'MainView',
   components:{
+    VideoBackground
   }
 }
 </script>
@@ -39,8 +44,8 @@ export default {
 }
 .page-section {
   padding-top: 6vh;
-  background: rgb(240, 242, 245) url("https://www.navinfo.com/images/about/group_about/brain-bg.png") center no-repeat;
-  background-size: 60%;
+  /* background: rgb(240, 242, 245) url("https://www.navinfo.com/images/about/group_about/brain-bg.png") center no-repeat;
+  background-size: 60%; */
 }
 
 .center {

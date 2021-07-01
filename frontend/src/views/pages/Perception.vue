@@ -1,5 +1,5 @@
 <template>
-  <video-background src="http://img0.singulato.com/video/video_bg_2.mp4"  class="main-page">
+  <video-background src="https://horizon.ai/upload/202009/25/523431601049431.mp4"  class="main-page">
 
     <div>
       <el-row type="flex" class="full page-section" justify="space-between">

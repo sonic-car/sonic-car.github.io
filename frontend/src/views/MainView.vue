@@ -23,14 +23,12 @@
       </computing>
     </div>
     <div class="section">
-      <page-section>
-        <template slot="header">
-          联系我们
-        </template>
-        <template slot="content">
-          wertert
-        </template>
-      </page-section>
+      <solution>
+      </solution>
+    </div>
+    <div class="section">
+      <team>
+      </team>
     </div>
     <div class="section fp-auto-height">
       <footer-view class="footer"></footer-view>
@@ -46,6 +44,8 @@ import VideoBackground from '@/components/VideoBackground.vue'
 import Perception from '@/views/pages/Perception.vue'
 import Learning from '@/views/pages/Learning.vue'
 import Computing from '@/views/pages/Computing.vue'
+import Solution from '@/views/pages/Solution.vue'
+import Team from '@/views/pages/Team.vue'
 
 
 export default {
@@ -56,7 +56,9 @@ export default {
     VideoBackground,
     Perception,
     Learning,
-    Computing
+    Computing,
+    Solution,
+    Team
   },
   data(){
     return{
