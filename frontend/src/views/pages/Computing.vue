@@ -1,20 +1,11 @@
 <template>
-  <video-background src="https://horizon-robotics-webpage.s3.amazonaws.com/uploads/2020/12/Clip.mp4"  class="main-page">
+  <video-background src="http://8.131.72.206/img/%E8%AE%A1%E7%AE%97%E4%BC%98%E5%8C%96_1.mp4"  class="main-page">
     <div>
       <el-row type="flex" class="full page-section" justify="space-between">
-        <el-col span='8' class="v-center">
-          <div class="item">
-          </div>
-          <div class="item">
-          </div>
-          <div class="item">
-          </div>
+        <el-col :span='12' class="v-center">
         </el-col>
-        <el-col span='2' class="center">
-            <div class="line"></div>
-        </el-col>
-        <el-col span='14' class="center">
-          <div class="slogan">
+        <el-col :span='10' class="center">
+          <div class="slogan animate__animated animate__fadeInUp " id="slogan">
               <strong>计</strong>瞬息数据
               <br>
               <strong>算</strong>精准结果
@@ -78,12 +69,14 @@ export default {
 }
 
 .slogan {
+  display: none;
   position: relative;
   z-index: 3;
   font-size: 3rem;
   color: white;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
   font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+  text-shadow: 2px 2px 6px #000000;
 }
 
 .slogan strong {
@@ -91,5 +84,10 @@ export default {
   font-weight: 400;
   margin-right: 20px;
 }
+
+.active #slogan{
+  display: block;
+}
+
 
 </style>

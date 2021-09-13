@@ -3,7 +3,7 @@
 
     <div>
       <el-row type="flex" class="full page-section" justify="space-between">
-        <el-col span='8' class="v-center">
+        <el-col :span="8" class="v-center">
           <div class="item">
           </div>
           <div class="item">
@@ -11,10 +11,10 @@
           <div class="item">
           </div>
         </el-col>
-        <el-col span='2' class="center">
+        <el-col :span="2" class="center">
             <div class="line"></div>
         </el-col>
-        <el-col span='14' class="center">
+        <el-col :span="14" class="center">
           <div class="slogan">
               <strong>学</strong>世界规律
               <br>

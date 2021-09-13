@@ -1,9 +1,9 @@
 <template>
   <div>
+    <nav-menu-view id="header"></nav-menu-view>
     <full-page ref="fullpage" :options="options" id="fullpage">
-      <nav-menu-view id="header"></nav-menu-view>
       <div class="section">
-        <video-background src="http://img0.singulato.com/video/video_bg_2.mp4"  class="main-page">
+        <video-background src="http://img0.singulato.com/video/video_bg_2.mp4"  class="main-page" >
           <div class="slogan">
             用智能改变世界
           </div>
@@ -69,7 +69,7 @@ export default {
         menu: '#menu',
         anchors: ['main', 'perception', 'learning', 'computing', 'solution', 'team'],
         fixedElements: '#header',
-        // paddingTop: "6vh",
+        // paddingTop: "60px",
       },
     };
   },

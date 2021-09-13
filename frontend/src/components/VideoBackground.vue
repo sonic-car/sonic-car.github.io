@@ -1,6 +1,6 @@
 <template>
   <div class="video-bg">
-    <video autoplay="autoplay" loop="loop" muted data-autoplay controls="controls" ref="video">
+    <video autoplay="autoplay" loop="loop" muted poster="https://www.singulato.com/wp-content/themes/singulato/index3/images/pc_video_bg.jpg" data-autoplay controls="controls" ref="video">
       <source :src="src" type="video/mp4">
     </video>
     <div class="VideoBg__content">

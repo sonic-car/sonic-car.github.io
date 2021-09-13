@@ -37,6 +37,9 @@ body {
 #main {
 }
 
+video::-webkit-media-controls {
+  display:none !important;
+}
 
 html {font-size: 62.5%!important; /* 10÷16=62.5% */}
 @media only screen and (min-width: 481px){

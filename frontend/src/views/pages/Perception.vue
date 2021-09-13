@@ -1,28 +1,18 @@
 <template>
-  <video-background src="https://horizon.ai/upload/202009/25/523431601049431.mp4"  class="main-page">
-
-    <div>
-      <el-row type="flex" class="full page-section" justify="space-between">
-        <el-col span='14' class="center">
-          <div class="slogan">
-              <strong>感</strong>周遭万物
-              <br>
-              <strong>知</strong>毫厘变化
-            </div>
-        </el-col>
-        <el-col span='2' class="center">
-            <div class="line"></div>
-        </el-col>
-        <el-col span='8' class="v-center">
-          <div class="item">
-          </div>
-          <div class="item">
-          </div>
-          <div class="item">
-          </div>
-        </el-col>
-      </el-row>
-    </div>
+  <video-background src="http://8.131.72.206/img/%E5%AE%9E%E4%BD%93%E6%BC%94%E7%A4%BA_1.mp4"  class="main-page">
+    <el-row type="flex" class="full page-section" justify="space-between">
+      <el-col :span="12" class="v-center">
+      </el-col>
+      <el-col :span="10" class="center">
+        <div class="circle">
+        </div>
+        <div class="slogan animate__animated animate__fadeInUp" id="slogan">
+          <strong>感</strong>周遭万物
+          <br>
+          <strong>知</strong>毫厘变化
+        </div>
+      </el-col>
+    </el-row>
   
   </video-background>
   
@@ -51,6 +41,7 @@ export default {
 }
 
 .center {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +55,7 @@ export default {
 }
 
 .line {
-  height: 50vh;
+  height: 60vh;
   width: .5vw;
   background-color:whitesmoke;
   box-sizing: border-box;
@@ -80,18 +71,35 @@ export default {
 }
 
 .slogan {
-  position: relative;
+  display: none;
   z-index: 3;
   font-size: 3rem;
   color: white;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
   font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+  text-shadow: 2px 2px 6px #000000;
 }
 
 .slogan strong {
   font-size: 4rem;
   font-weight: 400;
   margin-right: 20px;
+}
+
+
+.circle {
+  position:absolute;
+  margin-bottom: 20vh;
+  background-color:rgba(2, 74, 182, 0.7);
+  height: 15em;
+  width: 15em;
+  margin-right: 30vh;
+  border-radius: 15em;
+  z-index: 1;
+}
+
+.active #slogan{
+  display: block;
 }
 
 </style>
