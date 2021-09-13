@@ -41,7 +41,7 @@ export default {
   width: 100vw;
 }
 .page-section {
-  padding-top: 6vh;
+  padding-top: 62px;
   /* background: rgb(240, 242, 245) url("https://www.navinfo.com/images/about/group_about/brain-bg.png") center no-repeat;
   background-size: 60%; */
 }

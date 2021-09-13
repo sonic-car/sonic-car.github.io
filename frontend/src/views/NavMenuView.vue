@@ -17,10 +17,10 @@
           <el-col :span="3" class="menu-item">
             <a href="#computing">计算</a>
           </el-col>
-          <el-col :span="4" class="menu-item">
+          <el-col :span="5" class="menu-item">
             <a href="#solution">解决方案</a>
           </el-col>
-          <el-col :span="4" class="menu-item">
+          <el-col :span="5" class="menu-item">
             <a href="#team">团队介绍</a>
           </el-col>
       </el-col>

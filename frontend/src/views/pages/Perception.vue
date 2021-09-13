@@ -1,5 +1,5 @@
 <template>
-  <video-background src="http://8.131.72.206/img/%E5%AE%9E%E4%BD%93%E6%BC%94%E7%A4%BA_1.mp4"  class="main-page">
+  <video-background src="http://www.sonic-car.net/assets/%E5%AE%9E%E4%BD%93%E6%BC%94%E7%A4%BA.mp4"  class="main-page">
     <el-row type="flex" class="full page-section" justify="space-between">
       <el-col :span="12" class="v-center">
       </el-col>
@@ -37,7 +37,7 @@ export default {
   width: 100vw;
 }
 .page-section {
-  padding-top: 6vh;
+  padding-top: 62px;
 }
 
 .center {

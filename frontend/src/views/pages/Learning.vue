@@ -47,7 +47,7 @@ export default {
   width: 100vw;
 }
 .page-section {
-  padding-top: 6vh;
+  padding-top: 62px;
 }
 
 .center {
