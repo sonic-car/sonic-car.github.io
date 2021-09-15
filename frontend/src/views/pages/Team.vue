@@ -1,110 +1,206 @@
 <template>
-  <div>
-    <el-row type="flex" class="full page-section" justify="space-between">
-      <el-col :span='8' class="v-center team-menbers-list ">
-        <vue-seamless-scroll :data="team_members_infos" class="seamless-warp">
-          <team-member-card v-for="member in team_members_infos" 
-            :key="member.name" :name="member.name" :photo="member.photo" :intro="member.intro"></team-member-card>
-        </vue-seamless-scroll>
-      </el-col>
-      <el-col :span='2' class="center">
-          <div class="line"></div>
-      </el-col>
-      <el-col :span='14' class="center">
-        <div class="slogan">
-          团队活力
+  <div class="full page-section v-center">
+    <div class="title">
+      团队成员
+    </div>
+    <el-carousel :interval="3000" type="card" style="flex: 1;" height="60vh">
+      <el-carousel-item v-for="item in team_members" :key="item.task">
+        <h3 class="medium">{{ item.task }}</h3>
+        <div class="team-members-container">
+          <div class="team-members">
+            <div class="team-member" v-for="member in item.group_members" :key="member.name">
+              <el-image class="photo" :src="member.photo" @click="onClick(member.homePage)" fit="cover"></el-image>
+              <p class="name">{{ member.name }}</p>
+              <p class="position">{{ member.position}}</p>
+            </div>
+          </div>
         </div>
-      </el-col>
-    </el-row>
+        
+      </el-carousel-item>
+    </el-carousel>
   </div>
 </template>
 
 <script>
 
-import TeamMemberCard from '@/components/TeamMemberCard.vue'
+// import TeamMemberCard from '@/components/TeamMemberCard.vue'
 
 export default {
   name: 'Team',
   components:{
-    TeamMemberCard
+    // TeamMemberCard
+  },
+  methods:{
+    onClick(url){
+      if(url)
+        window.open(url,'_blank')
+    }
   },
   data() {
     return {
       fits: ['fill', 'fill', 'fill', 'fill', 'fill'],
       url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-      team_members_infos: [
+      team_members:[
         {
-          name: '王顺洪',
-          photo:  'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-          intro: {
-            grade: '研一',
-            major: '计算机',
-            role: 'Tracking',
-            slogan: 'sdfaskdjhgaskjgbeb',
-            homePage:  'www.baidu.com',
-          },
+          task: '指导教师',
+          group_members: [
+            {
+              name: '张燕咏',
+              photo: 'http://www.sonic-car.net/assets/img/photo/张燕咏.jpg',
+              homePage: 'http://staff.ustc.edu.cn/~yanyongz',
+              position: '中国科学技术大学教授'
+            },
+            {
+              name: '张昱',
+              photo: 'http://www.sonic-car.net/assets/img/photo/张昱.jpg',
+              homePage: 'http://staff.ustc.edu.cn/~yuzhang',
+              position: '中国科学技术大学副教授'
+            },
+            {
+              name: '吉建民',
+              photo: 'http://www.sonic-car.net/assets/img//photo/吉建民.jpg',
+              homePage: 'http://staff.ustc.edu.cn/~jianmin/',
+              position: '中国科学技术大学副教授'
+            }
+          ],
         },
         {
-          name: '王顺洪1',
-          photo:  'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-          intro: {
-            grade: '研一',
-            major: '计算机',
-            role: 'Tracking',
-            slogan: 'sdfaskdjhgaskjgbeb',
-          },
+          task: 'SLAM组',
+          group_members: [
+            {
+              name: '段逸凡',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg',
+              homePage: 'https://www.baidu.com'
+            },
+            {
+              name: '张鑫燃',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '王德全',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            }
+          ],
         },
         {
-          name: '王顺洪2',
-          photo:  'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-          intro: {
-            grade: '研一',
-            major: '计算机',
-            role: 'Tracking',
-            slogan: 'sdfaskdjhgaskjgbeb',
-          },
+          task: '检测组',
+          group_members: [
+            {
+              name: '祝含祈',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '褚晓萌',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '毛秋宇',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '王颖杰',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '朱张斌',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '何春望',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+          ]
         },
         {
-          name: '王顺洪3',
-          photo:  'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-          intro: {
-            grade: '研一',
-            major: '计算机',
-            role: 'Tracking',
-            slogan: 'sdfaskdjhgaskjgbeb',
-          },
+          task: '追踪组',
+          group_members: [
+            {
+              name: '李垚',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '张莎',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '任浩杰',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '文涛',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+          ]
         },
         {
-          name: '王顺洪4',
-          photo:  'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-          intro: {
-            grade: '研一',
-            major: '计算机',
-            role: 'Tracking',
-            slogan: 'sdfaskdjhgaskjgbeb',
-          },
+          task: '计算优化组',
+          group_members: [
+            {
+              name: '龚磊',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '翟祎',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '刘硕',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '王顺洪',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+          ]
         },
         {
-          name: '王顺洪5',
-          photo:  'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-          intro: {
-            grade: '研一',
-            major: '计算机',
-            role: 'Tracking',
-            slogan: 'sdfaskdjhgaskjgbeb',
-          },
+          task: '导航组',
+          group_members: [
+            {
+              name: '陈宇铵',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '彭杰',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '尤国良',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+          ]
         },
         {
-          name: '王顺洪6',
-          photo:  'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
-          intro: {
-            grade: '研一',
-            major: '计算机',
-            role: 'Tracking',
-            slogan: 'sdfaskdjhgaskjgbeb',
-          },
+          task: '联合标定组',
+          group_members: [
+            {
+              name: '李星辰',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '肖宇煊',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+          ]
         },
-      ]
+        {
+          task: '毫米波雷达组',
+          group_members: [
+            {
+              name: '赵园',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '何晨铭',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+            {
+              name: '孟成真',
+              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+            },
+          ]
+        },
+      ],
     }
   }
 }
@@ -114,6 +210,8 @@ export default {
 .full {
   height: 100vh;
   width: 100vw;
+  background: url('http://www.sonic-car.net/assets/img/IMG_1457.jpg') no-repeat;
+  background-size: cover;
 }
 .page-section {
   padding-top: 62px;
@@ -131,7 +229,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .line {
@@ -143,31 +241,99 @@ export default {
 }
 
 
-.slogan {
-  position: relative;
+.title {
   z-index: 3;
   font-size: 3rem;
+  font-weight: 600;
+  margin: 50px;
   color: black;
-  margin-bottom: 20vh;
-  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+  font-family: "Microsoft YaHei","黑体","宋体",sans-serif;
 }
 
-.slogan strong {
-  font-size: 4rem;
-  font-weight: 400;
-  margin-right: 20px;
-}
-
-.team-menbers-list{
-  
-
-}
 
 .seamless-warp {
   width: 90%;
   height: 60vh;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.el-carousel__item h3 {
+  color: #475669;
+  font-size: 1.5rem;
+  /* line-height: 50px; */
+  margin-top: 20px;
+}
+
+.el-carousel__container .is-active {
+  background-color: rgb(211, 220, 230);
+  opacity: 0.95;
+}
+
+.el-carousel__item {
+  border-radius: 20px;
+  background-color: rgb(211, 220, 230);
+  opacity: 0.5;
+}
+
+
+/* .el-carousel__item:nth-child(2n) {
+  background-color: rgba(153, 169, 191, 0.5);
+}
+
+.el-carousel__item:nth-child(2n+1) {
+  background-color: rgba(211, 220, 230, 0.5);
+} */
+
+.team-members-container {
+  height: calc(100% - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-members {
+  flex: 1;
+  display: grid;
+  padding: 20px;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 170px;
+  grid-auto-flow: dense;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 0.7rem;
+  /* line-height: 0.6rem; */
+  margin: 0;
+  color: black;
+  font-weight: 600;
+}
+.position {
+  margin: 0;
+  font-size: 0.5rem;
+  /* line-height: 0.5rem; */
+}
+
+.photo{
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  transition: .3s all ease;
+}
+
+.el-carousel__container .is-active .photo:hover{
+  height: 110px;
+  width: 110px;
+  border-radius: 110px;
 }
 
 

@@ -6,7 +6,7 @@
       <el-col :span="10" class="center">
         <div class="circle">
         </div>
-        <div class="slogan animate__animated animate__fadeInUp" id="slogan">
+        <div class="slogan animate__animated animate__fadeInUp">
           <strong>感</strong>周遭万物
           <br>
           <strong>知</strong>毫厘变化
@@ -98,7 +98,7 @@ export default {
   z-index: 1;
 }
 
-.active #slogan{
+.active .slogan{
   display: block;
 }
 

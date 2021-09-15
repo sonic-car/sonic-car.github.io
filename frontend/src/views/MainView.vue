@@ -4,7 +4,7 @@
     <full-page ref="fullpage" :options="options" id="fullpage">
       <div class="section">
         <video-background src="http://img0.singulato.com/video/video_bg_2.mp4"  class="main-page" >
-          <div class="slogan">
+          <div class="slogan animate__animated animate__fadeInUp">
             用智能改变世界
           </div>
         </video-background>
@@ -166,12 +166,17 @@ export default {
 }
 
 .slogan {
+  display: none;
   position: relative;
   z-index: 3;
   font-size: 3rem;
   color: white;
   margin-bottom: 30vh;
   font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+.active .slogan{
+  display: block;
 }
 
 </style>
