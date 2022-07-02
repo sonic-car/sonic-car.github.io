@@ -46,7 +46,7 @@ export default {
           group_members: [
             {
               name: '张燕咏',
-              photo: 'http://www.sonic-car.net/assets/img/photo/张燕咏.jpg',
+              photo: require('@/assets/user.png'),
               homePage: 'http://staff.ustc.edu.cn/~yanyongz',
               position: '中国科学技术大学教授'
             },
@@ -58,7 +58,7 @@ export default {
             },
             {
               name: '吉建民',
-              photo: 'http://www.sonic-car.net/assets/img//photo/吉建民.jpg',
+              photo: 'http://www.sonic-car.net/assets/img/photo/吉建民.jpg',
               homePage: 'http://staff.ustc.edu.cn/~jianmin/',
               position: '中国科学技术大学副教授'
             }
@@ -69,16 +69,16 @@ export default {
           group_members: [
             {
               name: '段逸凡',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg',
+              photo: require('@/assets/user.png'),
               homePage: 'https://www.baidu.com'
             },
             {
               name: '张鑫燃',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '王德全',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             }
           ],
         },
@@ -87,27 +87,27 @@ export default {
           group_members: [
             {
               name: '祝含祈',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '褚晓萌',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '毛秋宇',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '王颖杰',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '朱张斌',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '何春望',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
           ]
         },
@@ -116,19 +116,19 @@ export default {
           group_members: [
             {
               name: '李垚',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '张莎',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '任浩杰',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '文涛',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
           ]
         },
@@ -137,19 +137,19 @@ export default {
           group_members: [
             {
               name: '龚磊',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '翟祎',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '刘硕',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '王顺洪',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
           ]
         },
@@ -158,15 +158,15 @@ export default {
           group_members: [
             {
               name: '陈宇铵',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '彭杰',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '尤国良',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
           ]
         },
@@ -175,11 +175,11 @@ export default {
           group_members: [
             {
               name: '李星辰',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '肖宇煊',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
           ]
         },
@@ -188,15 +188,15 @@ export default {
           group_members: [
             {
               name: '赵园',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '何晨铭',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
             {
               name: '孟成真',
-              photo: 'http://www.sonic-car.net/assets/img/user.jpg'
+              photo: require('@/assets/user.png')
             },
           ]
         },
