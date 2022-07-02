@@ -1,3 +1,5 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === "production" ? "/xiaowei" : "/"
+    publicPath: './',
+    outputDir: 'docs',
+    assetsDir: 'static',
 };
