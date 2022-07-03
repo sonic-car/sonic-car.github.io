@@ -59,6 +59,12 @@ export function TeamMembers() {
           researchInterests: "深度强化学习，迁移学习",
         },
         {
+          name: "储晓萌",
+          photo: require('@/assets/photos/cxm.jpg'),
+          homePage: '',
+          researchInterests: "基于图像的3D目标检测",
+        },
+        {
           name: "毛秋宇",
           photo: require('@/assets/photos/mqy.jpg'),
           homePage: '',
@@ -75,6 +81,12 @@ export function TeamMembers() {
           photo: require('@/assets/photos/gl.jpg'),
           homePage: '',
           researchInterests: "场景描述语言，场景生成，仿真测试，深度学习",
+        },
+        {
+          name: "彭杰",
+          photo: require('@/assets/photos/pj.jpg'),
+          homePage: '',
+          researchInterests: "Path planning, Lifelong learning, multi-task learning, multi-modalities learning",
         },
       ]
     },   

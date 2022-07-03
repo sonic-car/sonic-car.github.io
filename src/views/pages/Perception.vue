@@ -1,5 +1,5 @@
 <template>
-  <video-background :src="require('@/assets/videos/实体演示.mp4')"  img="https://www.singulato.com/wp-content/themes/singulato/index3/images/pc_video_bg.jpg"  class="main-page">
+  <video-background :src="require('@/assets/videos/实体演示.mp4')"  class="main-page">
     <el-row type="flex" class="full page-section" justify="space-between">
       <el-col :span="12" class="v-center">
       </el-col>
