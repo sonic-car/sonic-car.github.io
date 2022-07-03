@@ -152,7 +152,6 @@ export default {
 .team-member {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 

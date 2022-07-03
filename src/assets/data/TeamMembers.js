@@ -146,6 +146,30 @@ export function TeamMembers() {
           homePage: '',
           researchInterests: "毫米波SLAM，视觉雷达融合",
         },
+        {
+          name: '何晨铭',
+          photo: require('@/assets/photos/hcm.jpg'),
+          homePage: '',
+          researchInterests: "毫米波雷达感知，遮挡检测",
+        },
+        {
+          name: '何春望',
+          photo: require('@/assets/photos/hcw.jpg'),
+          homePage: '',
+          researchInterests: "激光雷达 目标识别 雷视融合 部署优化",
+        },
+        {
+          name: '孟成真',
+          photo: require('@/assets/photos/mcz.jpg'),
+          homePage: '',
+          researchInterests: "毫米波雷达，位置识别",
+        },
+        {
+          name: '王顺洪',
+          photo: require('@/assets/photos/wsh.jpg'),
+          homePage: '',
+          researchInterests: "异构计算 算子调优",
+        },
       ]
     },
     {
