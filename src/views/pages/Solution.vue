@@ -12,7 +12,7 @@
           <div class="line"></div>
       </el-col>
       <el-col :span='8' class="v-center">
-        <el-image src="http://www.sonic-car.net/assets/img/xiaowei.png" fit='cover'></el-image>
+        <el-image :src="require('@/assets/xiaowei.png')" fit='cover'></el-image>
       </el-col>
     </el-row>
   </div>
@@ -35,8 +35,8 @@ export default {
 }
 .page-section {
   padding-top: 62px;
-  /* background: rgb(240, 242, 245) url("https://www.navinfo.com/images/about/group_about/brain-bg.png") center no-repeat;
-  background-size: 60%; */
+  background: rgb(240, 242, 245) url("https://www.navinfo.com/images/about/group_about/brain-bg.png") center no-repeat;
+  background-size: 60%;
 }
 
 .page-bg {

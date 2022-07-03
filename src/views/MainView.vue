@@ -23,8 +23,8 @@
       </computing>
     </div>
     <div class="section">
-      <solution>
-      </solution>
+      <publications>
+      </publications>
     </div>
     <div class="section">
       <team>
@@ -44,8 +44,8 @@ import VideoBackground from '@/components/VideoBackground.vue'
 import Perception from '@/views/pages/Perception.vue'
 import Learning from '@/views/pages/Learning.vue'
 import Computing from '@/views/pages/Computing.vue'
-import Solution from '@/views/pages/Solution.vue'
 import Team from '@/views/pages/Team.vue'
+import Publications from '@/views/pages/Publications.vue'
 
 
 export default {
@@ -57,8 +57,8 @@ export default {
     Perception,
     Learning,
     Computing,
-    Solution,
-    Team
+    Team,
+    Publications
   },
   data(){
     return{
@@ -67,7 +67,7 @@ export default {
       options: {
         licenseKey: 'YOUR_KEY_HEERE',
         menu: '#menu',
-        anchors: ['main', 'perception', 'learning', 'computing', 'solution', 'team'],
+        anchors: ['main', 'perception', 'learning', 'computing', 'publications', 'team'],
         fixedElements: '#header',
         // paddingTop: "60px",
       },

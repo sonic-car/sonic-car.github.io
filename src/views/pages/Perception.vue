@@ -1,5 +1,5 @@
 <template>
-  <video-background src="http://www.sonic-car.net/assets/%E5%AE%9E%E4%BD%93%E6%BC%94%E7%A4%BA.mp4"  class="main-page">
+  <video-background src="http://img0.singulato.com/video/video_bg_2.mp4" img="https://www.singulato.com/wp-content/themes/singulato/index3/images/pc_video_bg.jpg"  class="main-page">
     <el-row type="flex" class="full page-section" justify="space-between">
       <el-col :span="12" class="v-center">
       </el-col>

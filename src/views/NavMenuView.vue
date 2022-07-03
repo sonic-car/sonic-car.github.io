@@ -2,7 +2,7 @@
   <div>
     <el-row type="flex" class="row-bg header" justify="space-around">
       <el-col :span="4" class="icon">
-        <span class="title">SONIC</span>
+          <el-image :src="require('../assets/xiaowei-logo.png')" class="logo"></el-image>
       </el-col>
       <el-col :xs="16" :sm="16" :md="12" :lg="10" :xl="8" class="navbar">
           <el-col :span="3" class="menu-item">
@@ -18,7 +18,7 @@
             <a href="#computing">计算</a>
           </el-col>
           <el-col :span="5" class="menu-item">
-            <a href="#solution">解决方案</a>
+            <a href="#publications">科研成果</a>
           </el-col>
           <el-col :span="5" class="menu-item">
             <a href="#team">团队介绍</a>
@@ -62,10 +62,14 @@ export default {
   transition: .5s all ease;
 }
 
-.title {
+.logo {
+  height: 100%;
+  width: auto;
   font-size: 1.5rem;
   font-weight: 600;
   /* color: rgb(255, 255, 255); */
+  /* background: url('../assets/xiaowei-logo.png') no-repeat;
+  background-size: cover; */
   color: rgb(0, 0, 0, 1);
 }
 

@@ -1,6 +1,6 @@
 <template>
   <div class="video-bg">
-    <video autoplay="autoplay" loop="loop" muted poster="https://www.singulato.com/wp-content/themes/singulato/index3/images/pc_video_bg.jpg" data-autoplay controls="controls" ref="video">
+    <video autoplay="autoplay" loop="loop" muted :poster="img" data-autoplay controls="controls" ref="video">
       <source :src="src" type="video/mp4">
     </video>
     <div class="VideoBg__content">
@@ -80,8 +80,8 @@ export default {
 
 .video-bg {
   position: relative;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-size: cover;
   background-position: center;
   overflow: hidden;
