@@ -175,16 +175,16 @@ export default {
 }
 
 .photo{
-  height: 180px;
-  width: 180px;
-  border-radius: 180px;
+  height: 8vw;
+  width: 8vw;
+  border-radius: 8vw;
   transition: .3s all ease;
 }
 
 .photo-wrap{
-  height: 190px;
-  width: 190px;
-  border-radius: 190px;
+  height: 9vw;
+  width: 9vw;
+  border-radius: 9vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,9 +192,9 @@ export default {
 }
 
 .el-carousel__container .is-active .photo-wrap .photo:hover{
-  height: 190px;
-  width: 190px;
-  border-radius: 190px;
+  height: 9vw;
+  width: 9vw;
+  border-radius: 9vw;
 }
 
 
