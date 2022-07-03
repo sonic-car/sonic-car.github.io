@@ -135,6 +135,12 @@ export function TeamMembers() {
           homePage: '',
           researchInterests: "激光SLAM 场景理解",
         },
+        {
+          name: '翟祎',
+          photo: require('@/assets/photos/zhaiyi.jpg'),
+          homePage: '',
+          researchInterests: "张量编译器 算子调优",
+        },
       ],
     },
     {

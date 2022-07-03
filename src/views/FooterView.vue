@@ -4,12 +4,23 @@
       <el-col :span="8">
         <span class="footer-item-title">联系我们</span>
         <span class="footer-item-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.
+          中国科学技术大学高新校区 信智大楼 B808
         </span>
+        <br/>
+        <span class="footer-item-content">
+          中国科学技术大学西校区 科技楼 106
+        </span>
+        <br/>
+        <span class="footer-item-content">
+          张老师：
+        </span>
+        <a href= "mailto:yanyongz@ustc.edu.cn" class="footer-item-content"> 
+          yanyongz@ustc.edu.cn
+        </a>
       </el-col>
     </el-row>
     <el-divider></el-divider>
-    <span class="footer-item-content">Copyright ©2021 by USTC Linke</span>
+    <span class="footer-item-content">Copyright ©2022 by USTC Linke</span>
   </div>
 </template>
 
