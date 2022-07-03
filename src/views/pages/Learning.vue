@@ -4,18 +4,18 @@
     <div>
       <el-row type="flex" class="full page-section" justify="space-between">
         <el-col :span="8" class="v-center">
-          <div class="item">
+          <!-- <div class="item">
           </div>
           <div class="item">
           </div>
           <div class="item">
-          </div>
+          </div> -->
         </el-col>
         <el-col :span="2" class="center">
-            <div class="line"></div>
+            <!-- <div class="line"></div> -->
         </el-col>
         <el-col :span="14" class="center">
-          <div class="slogan">
+          <div class="slogan animate__animated animate__fadeInUp">
               <strong>学</strong>世界规律
               <br>
               <strong>习</strong>决策之道
@@ -80,12 +80,13 @@ export default {
 }
 
 .slogan {
-  position: relative;
+  display: none;
   z-index: 3;
   font-size: 3rem;
   color: white;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
   font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+  text-shadow: 2px 2px 6px #000000;
 }
 
 .slogan strong {
@@ -94,4 +95,7 @@ export default {
   margin-right: 20px;
 }
 
+.active .slogan{
+  display: block;
+}
 </style>

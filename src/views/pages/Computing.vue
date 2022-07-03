@@ -1,5 +1,5 @@
 <template>
-  <video-background src="http://www.sonic-car.net/assets/%E8%AE%A1%E7%AE%97%E4%BC%98%E5%8C%96.mp4"  class="main-page">
+  <video-background :src="require('@/assets/videos/计算优化.mp4')"  class="main-page">
     <div>
       <el-row type="flex" class="full page-section" justify="space-between">
         <el-col :span='12' class="v-center">
