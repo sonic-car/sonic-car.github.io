@@ -7,6 +7,7 @@
           <div class="slogan animate__animated animate__fadeInUp">
             用智能改变世界
           </div>
+          <!-- <el-image :src="require('@/assets/xiaowei.png')" fit='cover' class="picture"></el-image> -->
         </video-background>
       </div>
     

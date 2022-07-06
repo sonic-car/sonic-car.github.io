@@ -1,25 +1,48 @@
 <template>
-  <video-background src="https://static.mobileye.com/website/corporate/videos/homepage-hero2.mp4"   class="main-page">
+  <video-background :src="require('@/assets/videos/slam.mp4')" class="main-page">
 
     <div>
+      <!-- <div class="page-bg"></div>
+      <div class="page-bg-mask"></div> -->
       <el-row type="flex" class="full page-section" justify="space-between">
-        <el-col :span="8" class="v-center">
+        <el-col :span="5" class="v-center pictures-wrap">
+          <div class="item">
+            <el-image :src="require('@/assets/pictures/learning (1).gif')" fit='cover' class="picture"></el-image> 
+          </div>
+          <div class="item">
+            <el-image :src="require('@/assets/pictures/learning (2).gif')" fit='cover' class="picture"></el-image>
+          </div>
+          <div class="item">
+            <el-image :src="require('@/assets/pictures/learning (3).gif')" fit='cover' class="picture"></el-image>
+          </div>
           <!-- <div class="item">
-          </div>
-          <div class="item">
-          </div>
-          <div class="item">
+            <el-image :src="require('@/assets/pictures/learning (5).gif')" fit='cover' class="picture"></el-image>
           </div> -->
         </el-col>
-        <el-col :span="2" class="center">
-            <!-- <div class="line"></div> -->
-        </el-col>
+        <!-- <el-col :span="2" class="center">
+            <div class="line"></div>
+        </el-col> -->
         <el-col :span="14" class="center">
           <div class="slogan animate__animated animate__fadeInUp">
               <strong>学</strong>世界规律
               <br>
               <strong>习</strong>决策之道
             </div>
+        </el-col>
+
+        <el-col :span="5" class="v-center pictures-wrap">
+          <div class="item">
+            <el-image :src="require('@/assets/pictures/learning (4).gif')" fit='cover' class="picture"></el-image> 
+          </div>
+          <div class="item">
+            <el-image :src="require('@/assets/pictures/learning (5).gif')" fit='cover' class="picture"></el-image>
+          </div>
+          <div class="item">
+            <el-image :src="require('@/assets/pictures/learning (8).gif')" fit='cover' class="picture"></el-image>
+          </div>
+          <!-- <div class="item">
+            <el-image :src="require('@/assets/pictures/learning (5).gif')" fit='cover' class="picture"></el-image>
+          </div> -->
         </el-col>
       </el-row>
     </div>
@@ -45,9 +68,32 @@ export default {
 .full {
   height: 100vh;
   width: 100vw;
+  /* background: url('../../assets/IMG_0756.jpg') no-repeat;
+  background-size: cover; */
 }
 .page-section {
   padding-top: 62px;
+}
+
+.page-bg {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url('../../assets/IMG_0756.jpg') no-repeat;
+  background-size: cover;
+  z-index: -2;
+  filter: blur(1px);
+}
+
+.page-bg-mask{
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  z-index: -1;
+  opacity: 0.1;
 }
 
 .center {
@@ -72,11 +118,14 @@ export default {
 }
 
 .item {
-  height: 25vh;
+  height: 28vh;
   width: 90%;
-  margin-bottom: 10px;
-  border: 5px solid white;
-  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 20px; */
+  /* border: 5px solid white;
+  border-radius: 30px; */
 }
 
 .slogan {
@@ -98,4 +147,22 @@ export default {
 .active .slogan{
   display: block;
 }
+
+.picture {
+  width: 90%;
+  height: 80%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.pictures-wrap {
+  /* display: flex; */
+  /* display: grid;
+  padding: 20px;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-auto-rows: auto;
+  grid-auto-flow: dense; */
+}
+
 </style>
