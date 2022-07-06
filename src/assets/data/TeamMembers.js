@@ -188,6 +188,24 @@ export function TeamMembers() {
           homePage: '',
           researchInterests: "异构计算 算子调优",
         },
+        {
+          name: '刘硕',
+          photo: require('@/assets/photos/ls.jpg'),
+          homePage: '',
+          researchInterests: "深度学习模型推理优化，算子并行优化",
+        },
+        {
+          name: '肖宇煊',
+          photo: require('@/assets/photos/xyx.jpg'),
+          homePage: '',
+          researchInterests: "联合标定 相机 激光雷达",
+        },
+        {
+          name: '叶龙杰',
+          photo: require('@/assets/photos/ylj.jpg'),
+          homePage: '',
+          researchInterests: "车道线识别，多头网络",
+        },
       ]
     },
     {
