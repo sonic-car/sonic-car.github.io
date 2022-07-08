@@ -3,7 +3,7 @@
     <nav-menu-view id="header"></nav-menu-view>
     <full-page ref="fullpage" :options="options" id="fullpage">
       <div class="section">
-        <video-background src="http://img0.singulato.com/video/video_bg_2.mp4"  class="main-page" >
+        <video-background :src="require('@/assets/videos/Sonic-V1_x264.mp4')" class="main-page" >
           <div class="slogan animate__animated animate__fadeInUp">
             用智能改变世界
           </div>
@@ -174,6 +174,7 @@ export default {
   color: white;
   margin-bottom: 30vh;
   font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+  text-shadow: 2px 2px 6px #000000;
 }
 
 .active .slogan{

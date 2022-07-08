@@ -27,7 +27,7 @@ export function TeamMembers() {
       ],
     },
     {
-      grade: '2018届博士',
+      grade: '2018级博士',
       group_members: [
         {
           name: "陈宇铵",
@@ -38,7 +38,7 @@ export function TeamMembers() {
       ]
     },
     {
-      grade: '2019届博士',
+      grade: '2019级博士',
       group_members: [
         {
           name: "李垚",
@@ -59,7 +59,7 @@ export function TeamMembers() {
           researchInterests: "深度强化学习，迁移学习",
         },
         {
-          name: "储晓萌",
+          name: "褚晓萌",
           photo: require('@/assets/photos/cxm.jpg'),
           homePage: '',
           researchInterests: "基于图像的3D目标检测",
@@ -91,7 +91,7 @@ export function TeamMembers() {
       ]
     },   
     {
-      grade: '2020届硕士',
+      grade: '2020级硕士',
       group_members: [
         {
           name: '赵园',
@@ -144,7 +144,7 @@ export function TeamMembers() {
       ],
     },
     {
-      grade: '2021届硕士',
+      grade: '2021级硕士',
       group_members: [
         {
           name: '刘翔宇',
@@ -206,10 +206,16 @@ export function TeamMembers() {
           homePage: '',
           researchInterests: "车道线识别，多头网络",
         },
+        {
+          name: '王澍民',
+          photo: require('@/assets/photos/user.jpg'),
+          homePage: '',
+          researchInterests: "",
+        },
       ]
     },
     {
-      grade: '2022届硕士',
+      grade: '2022级硕士',
       group_members: [
         {
           name: '丁磊磊',
