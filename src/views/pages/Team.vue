@@ -4,7 +4,7 @@
       团队成员
     </div>
     <div style="flex: 1; display: flex; align-items: center;">
-      <el-carousel :interval="4000" type="card" height="75vh" style="flex: 1;">
+      <el-carousel :interval="4000" type="card" height="70vh" style="flex: 1;">
         <el-carousel-item v-for="item in team_members" :key="item.task">
           <h3 class="medium">{{ item.grade }}</h3>
           <div class="team-members-container">
@@ -58,7 +58,8 @@ export default {
   background-size: cover;
 }
 .page-section {
-  padding-top: 62px;
+  /* margin-top: 62px; */
+  /* padding-top: 62px; */
   /* background: rgb(240, 242, 245) url("https://www.navinfo.com/images/about/group_about/brain-bg.png") center no-repeat;
   background-size: 60%; */
 }
@@ -86,10 +87,11 @@ export default {
 
 
 .title {
+  padding-top: 62px;
   z-index: 3;
   font-size: 3rem;
   font-weight: 600;
-  margin: 30px;
+  margin: 20px;
   color: black;
   font-family: "Microsoft YaHei","黑体","宋体",sans-serif;
 }
@@ -141,9 +143,9 @@ export default {
 .team-members {
   flex: 1;
   display: grid;
-  padding: 20px;
+  padding: 10px;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-auto-rows: auto;
   grid-auto-flow: dense;
   overflow-y: auto;
@@ -175,16 +177,16 @@ export default {
 }
 
 .photo{
-  height: 8vw;
-  width: 8vw;
-  border-radius: 8vw;
+  height: 6vw;
+  width: 6vw;
+  border-radius: 6vw;
   transition: .3s all ease;
 }
 
 .photo-wrap{
-  height: 9vw;
-  width: 9vw;
-  border-radius: 9vw;
+  height: 7vw;
+  width: 7vw;
+  border-radius: 7vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,15 +194,15 @@ export default {
 }
 
 .el-carousel__container .is-active .photo-wrap .photo:hover{
-  height: 9vw;
-  width: 9vw;
-  border-radius: 9vw;
+  height: 7vw;
+  width: 7vw;
+  border-radius: 7vw;
 }
 
 
 .el-carousel__container .is-active {
-  width: 60vw;
-  transform: translateX(20vw) !important;
+  width: 70vw;
+  transform: translateX(15vw) !important;
 }
 
 

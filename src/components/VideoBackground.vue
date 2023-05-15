@@ -1,7 +1,7 @@
 <template>
   <div class="video-bg">
     <video autoplay="autoplay" loop="loop" muted :poster="img" data-autoplay controls="controls" ref="video">
-      <source :src="src" type="video/mp4">
+      <!-- <source :src="src" type="video/mp4"> -->
     </video>
     <div class="VideoBg__content">
       <slot></slot>

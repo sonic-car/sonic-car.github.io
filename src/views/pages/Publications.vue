@@ -6,7 +6,7 @@
       <div class="section-title">
         <h1>部分科研成果</h1>
       </div>
-      <el-divider></el-divider>
+      <el-divider style="margin: 0;"></el-divider>
       <div class="paper-list">
         <el-scrollbar style="height:100%;">
           <div class="paper-list-warp">
@@ -63,6 +63,7 @@ export default {
   width: 100vw;
 }
 .page-section {
+  /* margin-top: 62px; */
   padding-top: 62px;
   /* background: rgb(240, 242, 245) url('../../assets/IMG_4200.jpeg') center no-repeat; */
   background-size: 100vw auto;
@@ -133,13 +134,19 @@ export default {
   margin-right: 20px;
 }
 .paper-list {
-  height: 80vh;
+  height: calc(100% - 84px - 2em);
   /* overflow-y: auto; */
-  padding: 10px 50px;
+  padding: 0px 50px;
 }
 
 .section-title {
-  margin: 10px auto;
+  /* padding-top: 62px; */
+  margin: 5px auto;
+}
+
+.section-title h1 {
+  /* padding-top: 62px; */
+  margin: 0px auto;
 }
 
 
@@ -148,8 +155,12 @@ export default {
   max-width: 80%;
   display: flex;
   flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.el-divider--horizontal {
+    margin: 0 !important;
 }
 
 </style>

@@ -61,7 +61,7 @@ export function PubData() {
     {
       pic: require('@/assets/pictures/wyj2021.png'),
       title: "Multi-Modal 3D Object Detection in Autonomous Driving: A Survey",
-      author: "Yingjie Wang∗ · Qiuyu Mao∗ · Hanqi Zhu · Jiajun Deng · Yu Zhang · Jianmin Ji · Houqiang Li · Yanyong Zhang (corresponding author)",
+      author: "Yingjie Wang∗, Qiuyu Mao∗, Hanqi Zhu, Jiajun Deng, Yu Zhang, Jianmin Ji, Houqiang Li, Yanyong Zhang (corresponding author)",
       meeting: "arxiv",
       doi: "https://arxiv.org/pdf/2106.12735.pdf",
       video: "",
